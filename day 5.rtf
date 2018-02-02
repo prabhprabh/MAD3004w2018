@@ -1,0 +1,468 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red255\green255\blue255;\red170\green13\blue145;
+\red0\green0\blue0;\red196\green26\blue22;\red92\green38\blue153;\red63\green110\blue116;\red28\green0\blue207;
+\red46\green13\blue110;\red38\green71\blue75;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c45600\c0;\csgray\c100000;\csgenericrgb\c66500\c5200\c56900;
+\csgenericrgb\c0\c0\c0;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c35900\c14900\c60100;\csgenericrgb\c24700\c43100\c45600;\csgenericrgb\c11000\c0\c81000;
+\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c14900\c27800\c29400;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //: Playground - noun: a place where people can play
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 import\cf5  UIKit
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  str = \cf6 \cb3 "Hello, playground"
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //classes
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 class\cf5  Employee \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  empId: \cf7 \cb3 Int\cf5 \cb3 ?
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  empName: \cf7 \cb3 String\cf5 \cb3 ?
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  basicPay: \cf7 \cb3 Double\cf5 \cb3 ?
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 \cb3 //initializer in swift
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5     \cf4 init\cf5 () \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 empId\cf5 =\cf9 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 empName\cf5 =\cf6 \cb3 "chahal"
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 basicPay\cf5 =\cf9 2000
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 \cb3 //parameterized initilizer
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5     \cf4 init\cf5 (Id: \cf7 \cb3 Int\cf5 \cb3 , Name: \cf7 \cb3 String\cf5 \cb3 , pay: \cf7 \cb3 Double\cf5 \cb3 )\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 empId\cf5  = Id
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 empName\cf5  = Name
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 basicPay\cf5 =pay
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 func\cf5  display()\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 \cb3 print\cf5 \cb3 (\cf6 \cb3 "Employee ID : "\cf5 \cb3 , \cf4 self\cf5 .\cf8 empId\cf5 !)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 \cb3 print\cf5 \cb3 (\cf6 \cb3 "Employee Name : "\cf5 \cb3 , \cf4 self\cf5 .\cf8 empName\cf5 !)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 \cb3 print\cf5 \cb3 (\cf6 \cb3 "basic Pay : "\cf5 \cb3 , \cf4 self\cf5 .\cf8 basicPay\cf5 !)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 \cb3 //deinitializer
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5     \cf4 deinit\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 \cb3 print\cf5 \cb3 (\cf6 \cb3 "Employee object deinitialized"\cf5 \cb3 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf4 var\cf5  emp1 = \cf8 Employee\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 emp1\cf5 .\cf8 empId\cf5  = \cf9 101
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 emp1\cf5 .\cf8 empName\cf5  = \cf6 \cb3 "Prabh"
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf8 emp1\cf5 .\cf8 basicPay\cf5  = \cf9 5000
+\f1\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //emp1.display()
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  emp3 = \cf8 Employee\cf5 ()
+\f1\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //emp3.display()
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  emp4 = \cf8 Employee\cf5 (Id:\cf9 104\cf5 , Name:\cf6 \cb3 "prabhjot"\cf5 \cb3 ,pay:\cf9 3088.89\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 emp4\cf5 .\cf11 \cb3 display\cf5 \cb3 ()
+\f1\fs24 \cf0 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //inheriting from employee class
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 class\cf5  PermanentEmployee : \cf8 Employee\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  vacationWeeks : \cf7 \cb3 Int\cf5 \cb3 ?
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 \cb3 //default initializer
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5     \cf4 override\cf5  \cf4 init\cf5 ()\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 super\cf5 .\cf4 init\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 vacationWeeks\cf5  = \cf9 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 \cb3 //parametrized initilizer of sub clas
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5     \cf4 init\cf5 (Id: \cf7 \cb3 Int\cf5 \cb3 , Name: \cf7 \cb3 String\cf5 \cb3 , pay: \cf7 \cb3 Double\cf5 \cb3 , weeks: \cf7 \cb3 Int\cf5 \cb3 )\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 super\cf5 .\cf4 init\cf5 (Id: Id, Name: Name, pay: pay)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 self\cf5 .\cf8 vacationWeeks\cf5  = weeks
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 override\cf5  \cf4 func\cf5  display()\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf2 \cb3 //super.display()
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5         \cf10 \cb3 print\cf5 \cb3 (\cf6 \cb3 "VacationWeeks :"\cf5 \cb3 ,\cf8 vacationWeeks\cf5 !)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf4 var\cf5  obj2 = \cf8 PermanentEmployee\cf5 ()
+\f1\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //obj2.display()
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf8 obj2\cf5 .\cf8 empId\cf5  = \cf9 102
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 obj2\cf5 .\cf8 empName\cf5  = \cf6 \cb3 "prabh"
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf8 obj2\cf5 .\cf8 basicPay\cf5  = \cf9 3000
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 obj2\cf5 .\cf8 vacationWeeks\cf5  = \cf9 10
+\f1\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //obj2.display()
+\f1\fs24 \cf0 \cb3 \
+\
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  obj5 = \cf8 PermanentEmployee\cf5 ()
+\f1\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //obj5.display()
+\f1\fs24 \cf0 \cb3 \
+\
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  obj6 = \cf8 PermanentEmployee\cf5 (Id: \cf9 111\cf5 , Name: \cf6 \cb3 "prab"\cf5 \cb3 , pay: \cf9 2001\cf5 ,  weeks: \cf9 3\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 obj6\cf5 .\cf11 \cb3 display\cf5 \cb3 ()
+\f1\fs24 \cf0 \
+\
+\
+\
+\
+\
+
+\f0\fs22 \cf4 class\cf5  payroll : \cf8 PermanentEmployee\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  netPay : \cf7 \cb3 Double\cf5 \cb3 ?
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5        \cf2 \cb3 /* get
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3         \{
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3             let vw = self.vacationWeeks!
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3             if vw > 5
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3             \{
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3                 return self.basicPay! - 100
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3             \}
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3             else
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3             \{
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3                 return self.basicPay
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3             \}
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3         \}
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3  
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3     \}
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3     */
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 override\cf5  \cf4 init\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 super\cf5 .\cf4 init\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 netPay\cf5  = \cf9 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 override\cf5  \cf4 init\cf5 (Id: \cf7 \cb3 Int\cf5 \cb3 , Name: \cf7 \cb3 String\cf5 \cb3 , pay: \cf7 \cb3 Double\cf5 \cb3 , weeks: \cf7 \cb3 Int\cf5 \cb3 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 super\cf5 .\cf4 init\cf5 (Id: Id, Name: Name, pay: pay,  weeks: weeks)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf8 netPay\cf5  = \cf9 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf5     \cf4 override\cf5  \cf4 func\cf5  display() \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 super\cf5 .\cf11 \cb3 display\cf5 \cb3 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 self\cf5 .\cf11 \cb3 calculate\cf5 \cb3 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 \cb3 print\cf5 \cb3 (\cf6 \cb3 "netPay :"\cf5 \cb3 , \cf4 self\cf5 .\cf8 netPay\cf5 !)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 func\cf5  calculate() \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf4 var\cf5  \ulth v\ulnone w = \cf4 self\cf5 .\cf8 vacationWeeks\cf5 !
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf4 if\cf5  vw > \cf9 5\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5                 \cf4 self\cf5 .\cf8 netPay\cf5 ! = \cf4 self\cf5 .\cf8 basicPay\cf5 ! - \cf9 100
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf4 else\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5                 \cf4 self\cf5 .\cf8 netPay\cf5 ! = \cf4 self\cf5 .\cf8 basicPay\cf5 !
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf4 var\cf5  obj7 = \cf8 payroll\cf5 (Id: \cf9 111\cf5 , Name: \cf6 \cb3 "prab"\cf5 \cb3 , pay: \cf9 2001\cf5 ,  weeks: \cf9 3\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 obj7\cf5 .\cf11 \cb3 display\cf5 \cb3 ()
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf5  \cf2 \cb3 //manipulate object array
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf5  \cf4 var\cf5  janpayroll = [\cf8 payroll\cf5 ]()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  \cf4 let\cf5  noOfEmployees = \cf9 2
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  \cf4 for\cf5  i \cf4 in\cf5  \cf9 0\cf5 ..<\cf9 2\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  \cf8 janpayroll\cf5 .\cf10 \cb3 append\cf5 \cb3 (\cf8 payroll\cf5 (Id: \cf9 102\cf5 , Name: \cf6 \cb3 "prabbb"\cf5 \cb3 , pay: \cf9 3333.33\cf5 , weeks: \cf9 3\cf5 ))
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  \cf8 janpayroll\cf5 [i].\cf11 \cb3 display\cf5 \cb3 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5  
+\f1\fs24 \cf0 \
+\
+}
